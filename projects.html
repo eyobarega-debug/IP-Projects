@@ -2,111 +2,143 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projects portfolio of Eyob Arega, featuring ClassQuest, Library Management System, and Gibiyachen.">
     <title>Projects | Eyob Arega</title>
     <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
-    <p><a href="index.html">Back to Home</a></p>
-    <h1>My Projects</h1>
-    <p>Details of every project I have built.</p>
-
-    <!-- Lab 7: Project Summary Table -->
-    <table border="1" cellpadding="8" cellspacing="0">
-        <caption>Project Summary</caption>
-        <thead>
-            <tr>
-                <th>Project</th>
-                <th>Language</th>
-                <th>Year</th>
-                <th>Link</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>ClassQuest</td>
-                <td>React, C++</td>
-                <td>2024</td>
-                <td><a href="#classquest">View details</a></td>
-            </tr>
-            <tr>
-                <td>Library Management System</td>
-                <td>C++, MySQL</td>
-                <td>2024</td>
-                <td><a href="#library">View details</a></td>
-            </tr>
-            <tr>
-                <td>Gibiyachen</td>
-                <td>Web Tech</td>
-                <td>2024</td>
-                <td><a href="#gibiyachen">View details</a></td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <th colspan="3">Total projects</th>
-                <th>3</th>
-            </tr>
-        </tfoot>
-    </table>
-    <hr>
-
-    <!-- Lab 5 & 6: Project Details with Images and Lists -->
-    <h3 id="classquest">ClassQuest</h3>
-    <img src="images/classquest-project.png" alt="Screenshot of ClassQuest interface" width="400" height="250">
-    <p>ClassQuest is a learning platform that helps students practice coding challenges, track their progress and improve their programming skills.</p>
+    <header>
+        <nav>
+            <a href="index.html">Back to Home</a>
+        </nav>
+    </header>
     
-    <h4>How I built it</h4>
-    <ol>
-        <li>Designed the React and Vite frontend interface</li>
-        <li>Created the JSON question schema</li>
-        <li>Developed the C++ backend logic</li>
-        <li>Tested the integration and application flow</li>
-    </ol>
-    <h4>Technologies used:</h4>
-    <ul>
-        <li>React & Vite</li>
-        <li>C++</li>
-        <li>JSON</li>
-    </ul>
-    
-    <h3 id="library">Library Management System</h3>
-    <img src="images/project-library.png" alt="Screenshot of Library Management System console" width="400" height="250">
-    <p>A console program integrated with MySQL for borrowing and returning books.</p>
-    
-    <h4>How I built it</h4>
-    <ol>
-        <li>Designed the database schema in MySQL</li>
-        <li>Connected MySQL Connector C++ to the application</li>
-        <li>Created the text-based console menu</li>
-        <li>Implemented borrowing and returning logic</li>
-    </ol>
-    <h4>Technologies used:</h4>
-    <ul>
-        <li>C++</li>
-        <li>MySQL</li>
-    </ul>
+    <main>
+        <h1>My Projects</h1>
+        <p>Details of every project I have built.</p>
 
-    <h3 id="gibiyachen">Gibiyachen</h3>
-    <img src="images/project-gibiyachen.png" alt="Screenshot of Gibiyachen digital marketplace" width="400" height="250">
-    <p>Gibiyachin is a digital marketplace that connects students with local sellers to easily buy and sell products online.</p>
+        <table border="1" cellpadding="8" cellspacing="0">
+            <caption>Project Summary</caption>
+            <thead>
+                <tr>
+                    <th>Project</th>
+                    <th>Language</th>
+                    <th>Year</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ClassQuest</td>
+                    <td>React, C++</td>
+                    <td><time datetime="2024">2024</time></td>
+                    <td><a href="#classquest">View details</a></td>
+                </tr>
+                <tr>
+                    <td>Library Management System</td>
+                    <td>C++, MySQL</td>
+                    <td><time datetime="2024">2024</time></td>
+                    <td><a href="#library">View details</a></td>
+                </tr>
+                <tr>
+                    <td>Gibiyachen</td>
+                    <td>Web Tech</td>
+                    <td><time datetime="2024">2024</time></td>
+                    <td><a href="#gibiyachen">View details</a></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="3">Total projects</th>
+                    <th>3</th>
+                </tr>
+            </tfoot>
+        </table>
 
-    <h4>How I built it</h4>
-    <ol>
-        <li>Analyzed local student market needs</li>
-        <li>Designed the web interface for buyers and sellers</li>
-        <li>Developed the product listing system</li>
-        <li>Integrated communication features</li>
-    </ol>
-    <h4>Technologies used:</h4>
-    <ul>
-        <li>HTML & CSS</li>
-        <li>JavaScript</li>
-        <li>Node.js</li>
-    </ul>
-    <hr>
+        <!-- Lab 8: Project Details wrapped in <article> -->
+        <article id="classquest">
+            <h3>ClassQuest</h3>
+            <img src="images/classquest-project.png" alt="Screenshot of ClassQuest interface" width="400" height="250">
+            <p>ClassQuest is a learning platform that helps students practice coding challenges, track their progress and improve their programming skills.</p>
+            
+            <h3>Watch the demo</h3>
+            <video controls poster="images/project-demo-poster.jpg" width="640" height="360">
+                <source src="media/project-demo.mp4" type="video/mp4">
+                <source src="media/project-demo.webm" type="video/webm">
+                <track src="media/project-demo.vtt" kind="captions" srclang="en" label="English" default>
+                Your browser does not support the video tag.
+            </video>
 
-    <!-- Lab 4: External and In-page Links -->
-    <p><a href="https://www.w3.org/">W3C HTML Reference</a></p>
-    <p><a href="index.html#contact">Jump to Contact</a></p>
+            <details>
+                <summary>How I built it</summary>
+                <ol>
+                    <li>Designed the React and Vite frontend interface</li>
+                    <li>Created the JSON question schema</li>
+                    <li>Developed the C++ backend logic</li>
+                    <li>Tested the integration and application flow</li>
+                </ol>
+            </details>
+            
+            <h4>Technologies used:</h4>
+            <ul>
+                <li>React & Vite</li>
+                <li>C++</li>
+                <li>JSON</li>
+            </ul>
+        </article>
+        
+        <article id="library">
+            <h3>Library Management System</h3>
+            <img src="images/project-library.png" alt="Screenshot of Library Management System console" width="400" height="250">
+            <p>A console program integrated with MySQL for borrowing and returning books.</p>
+            
+            <details>
+                <summary>How I built it</summary>
+                <ol>
+                    <li>Designed the database schema in MySQL</li>
+                    <li>Connected MySQL Connector C++ to the application</li>
+                    <li>Created the text-based console menu</li>
+                    <li>Implemented borrowing and returning logic</li>
+                </ol>
+            </details>
+            
+            <h4>Technologies used:</h4>
+            <ul>
+                <li>C++</li>
+                <li>MySQL</li>
+            </ul>
+        </article>
+
+        <article id="gibiyachen">
+            <h3>Gibiyachen</h3>
+            <img src="images/project-gibiyachen.png" alt="Screenshot of Gibiyachen digital marketplace" width="400" height="250">
+            <p>Gibiyachin is a digital marketplace that connects students with local sellers to easily buy and sell products online.</p>
+
+            <details>
+                <summary>How I built it</summary>
+                <ol>
+                    <li>Analyzed local student market needs</li>
+                    <li>Designed the web interface for buyers and sellers</li>
+                    <li>Developed the product listing system</li>
+                    <li>Integrated communication features</li>
+                </ol>
+            </details>
+            
+            <h4>Technologies used:</h4>
+            <ul>
+                <li>HTML & CSS</li>
+                <li>JavaScript</li>
+                <li>Node.js</li>
+            </ul>
+        </article>
+
+        <p><a href="https://www.w3.org/">W3C HTML Reference</a></p>
+        <p><a href="index.html#contact">Jump to Contact</a></p>
+    </main>
+
+    <footer>
+        <p>Copyright 2026 Eyob Arega. All rights reserved.</p>
+    </footer>
 </body>
 </html>

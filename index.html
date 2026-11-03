@@ -30,7 +30,11 @@
     <p>I am a 3<sup>rd</sup> year <strong>Software Engineering</strong> student in Section B. I <em>really</em> enjoy building digital solutions, and my current goal is to <mark>master full-stack web development</mark>.</p>
     <p>Languages I have used: <b>C++</b>, <b>Python</b>, <b>java</b>,  and <b>JavaScript</b>
     <p>Fun fact: I am a number 9 on the football field and a Software Engineer in the making off it. ⚽💻</p>
-    </p>
+    <h3>Hear my introduction</h3>
+            <audio controls>
+                <source src="media/intro.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
     </section>
 
     <aside>
@@ -40,6 +44,14 @@
     </blockquote>
     <p>My peers always say <q>practice beats theory</q>, so I collaborate on projects every day.</p>
     <p>Book I am reading: <cite>The New Psycho-Cybernetics</cite> by Maxwell Maltz</p>
+
+    <h3>A talk I recommend</h3>
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                    width="560" height="315" 
+                    title="YouTube video: A talk on Psycho-Cybernetics" 
+                    allowfullscreen>
+            </iframe>
+
     </aside>
     
 <section id="skills">
@@ -177,6 +189,12 @@
     <p>LinkedIn: <a href="https://www.linkedin.com/in/eyob-arega-1b958b405/">linkedin.com/in/eyobarega</a></p>
     <p><a href="files/cv.pdf" download>Download my CV (PDF)</a></p>
 
+        <h3>Where I study</h3>
+            <iframe src="PASTE-THE-MAP-SRC-HERE" 
+                    width="600" height="300" 
+                    title="Map of Addis Ababa Science and Technology University campus">
+            </iframe>
+            
     <h3>Connect with me</h3>
     <img src="images/connect-banner.png" usemap="#connectmap" alt="Connect banner: GitHub, LinkedIn, Email" width="600" height="200">
     <map name="connectmap">
@@ -188,7 +206,6 @@
             <h3>Send me a message</h3>
             <form action="thank-you.html" method="post" enctype="multipart/form-data">
                 
-                <!-- Part B Validation added (required) -->
                 <fieldset>
                     <legend>Your Details</legend>
                     <label for="fullname">Full name: </label>
@@ -198,7 +215,6 @@
                     <input type="email" id="email" name="email" required>
                 </fieldset>
 
-                <!-- Part A: New Project Details group -->
                 <fieldset>
                     <legend>Project Details</legend>
                     <label for="phone">Phone (optional): </label>
@@ -220,7 +236,6 @@
                     <input type="number" id="weeks" name="weeks" min="1" max="52" step="1">
                     <br><br>
 
-                    <!-- Your Turn: Budget field -->
                     <label for="budget">Your budget (ETB): </label>
                     <input type="number" id="budget" name="budget" min="1000" step="500">
                     <br><br>
