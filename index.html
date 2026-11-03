@@ -22,6 +22,17 @@
         <a href="#contact">Contact</a> |
         <a href="projects.html">All Projects</a>
     </nav>
+
+    <button type="button" 
+onclick="document.getElementById('hireDialog').showModal()">Hire me</button> 
+<dialog id="hireDialog"> 
+<h2>Available for internships</h2> 
+<p>I am available for internships and freelance web projects from June 2027.</p> 
+<p><a href="#contact">Send me a message</a> or <a href="files/cv.pdf" 
+download>download my CV</a>.</p> 
+<button type="button" 
+onclick="document.getElementById('hireDialog').close()">Close</button> 
+</dialog>
 </header>
 <main>
     
@@ -56,6 +67,27 @@
     
 <section id="skills">
     <h2>Skills</h2>
+
+    <h3>Skill Levels</h3> 
+<p> 
+<label for="lvl-html">HTML</label> 
+<meter id="lvl-html" value="0.8" min="0" max="1">80%</meter> 
+</p> 
+<p> 
+<label for="lvl-C++">C++</label> 
+<meter id="lvl-C++" value="0.7" min="0" max="1">70%</meter> 
+</p> 
+<p> 
+<label for="lvl-js">JavaScript</label> 
+<meter id="lvl-js" value="0.7" min="0" max="1" low="0.3" high="0.7" 
+optimum="1">70%</meter> 
+</p>
+
+<p> 
+<label for="lvl-java">Java</label> 
+<meter id="lvl-java" value="0.5" min="0" max="1" low="0.5" high="0.5" 
+optimum="1">50%</meter> 
+</p> 
 
 <ul>
     <li>Programming Languages
@@ -139,6 +171,11 @@
         <h2>Education</h2>
     <h3>BSc in Software Engineering</h3>
     <p>Addis Ababa Science and Technology University, 2024 - present</p>
+
+    <p> 
+<label for="degree">Degree progress:</label> 
+<progress id="degree" value="40" max="100">40%</progress> 40% 
+</p> 
     
     <table border="1" cellpadding="8" cellspacing="0">
         <caption>Academic Record BSc in Software Engineering</caption>
@@ -189,12 +226,18 @@
     <p>LinkedIn: <a href="https://www.linkedin.com/in/eyob-arega-1b958b405/">linkedin.com/in/eyobarega</a></p>
     <p><a href="files/cv.pdf" download>Download my CV (PDF)</a></p>
 
-        <h3>Where I study</h3>
-            <iframe src="PASTE-THE-MAP-SRC-HERE" 
-                    width="600" height="300" 
-                    title="Map of Addis Ababa Science and Technology University campus">
-            </iframe>
-            
+      <h3>Where I study</h3>
+
+<iframe
+    src="https://www.google.com/maps?q=Addis+Ababa+Science+and+Technology+University&output=embed"
+    width="600"
+    height="300"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    title="Map of Addis Ababa Science and Technology University">
+</iframe>
+
     <h3>Connect with me</h3>
     <img src="images/connect-banner.png" usemap="#connectmap" alt="Connect banner: GitHub, LinkedIn, Email" width="600" height="200">
     <map name="connectmap">
@@ -271,7 +314,7 @@
                     <label for="message">Message: </label><br>
                     <textarea id="message" name="message" rows="6" cols="40" required></textarea>
                     <br>
-                    <!-- Checkbox added here -->
+
                     <input type="checkbox" id="copy" name="copy" value="yes">
                     <label for="copy">Send me a copy of this message</label>
                 </fieldset>
