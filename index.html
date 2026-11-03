@@ -10,6 +10,9 @@
 </head>
 <body>
 <header>
+    <canvas id="logoCanvas" width="120" height="120">
+        Eyob Arega logo
+    </canvas>
     <h1>Eyob Arega</h1>
     <img src="images/profile.jpg" alt="Portrait of Eyob Arega" title="Eyob Arega" width="200" height="200">
     <p>Software Engineering student and aspiring web developer.</p>
@@ -329,5 +332,54 @@ optimum="1">50%</meter>
     <p>Copyright 2026 Eyob Arega. All rights reserved.</p> 
     <p>Last updated: <time datetime="2026-11-03">3 November 2026</time></p>
 </footer> 
+
+<script>
+
+const logoCanvas = document.getElementById("logoCanvas");
+const logoContext = logoCanvas.getContext("2d");
+
+logoContext.fillStyle = "blue";
+logoContext.fillRect(0, 0, 120, 120);
+
+logoContext.beginPath();
+logoContext.arc(60, 60, 45, 0, 2 * Math.PI);
+logoContext.fillStyle = "white";
+logoContext.fill();
+
+logoContext.fillStyle = "blue";
+logoContext.font = "bold 30px Arial";
+logoContext.textAlign = "center";
+logoContext.textBaseline = "middle";
+logoContext.fillText("EA", 60, 60);
+
+const skillsCanvas = document.getElementById("skillsCanvas");
+const skillsContext = skillsCanvas.getContext("2d");
+
+const skills = [
+    { name: "HTML", value: 80 },
+    { name: "C++", value: 70 },
+    { name: "JavaScript", value: 70 },
+    { name: "Java", value: 50 }
+];
+
+const barWidth = 40;
+const barPositions = [20, 90, 160, 250];
+
+skillsContext.font = "12px Arial";
+skillsContext.textAlign = "center";
+
+skills.forEach((skill, index) => {
+    const barHeight = skill.value * 1.2; // 80% of 120px = 96px
+    const x = barPositions[index];
+    const y = 130 - barHeight;
+
+    skillsContext.fillStyle = "blue";
+    skillsContext.fillRect(x, y, barWidth, barHeight);
+
+    skillsContext.fillStyle = "black";
+    skillsContext.fillText(skill.name, x + barWidth / 2, 145);
+});
+</script>
+
 </body>
 </html>
