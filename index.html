@@ -7,6 +7,8 @@
     <meta name="keywords" content="Eyob Arega, portfolio, software engineering, web developer, HTML">
     <meta name="author" content="Eyob arega">
     <title>Eyob Arega | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    
 </head>
 <body>
 <header>
@@ -17,6 +19,8 @@
     <img src="images/profile.jpg" alt="Portrait of Eyob Arega" title="Eyob Arega" width="200" height="200">
     <p>Software Engineering student and aspiring web developer.</p>
 
+    <button type="button" 
+    onclick="document.getElementById('hireDialog').showModal()">Hire me</button> 
     <nav>
         <a href="#about">About</a> |
         <a href="#skills">Skills</a> |
@@ -25,9 +29,6 @@
         <a href="#contact">Contact</a> |
         <a href="projects.html">All Projects</a>
     </nav>
-
-    <button type="button" 
-onclick="document.getElementById('hireDialog').showModal()">Hire me</button> 
 <dialog id="hireDialog"> 
 <h2>Available for internships</h2> 
 <p>I am available for internships and freelance web projects from June 2027.</p> 
